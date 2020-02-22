@@ -17,7 +17,34 @@ $(document).ready(function(){
 	audioelement=new Audio();
 	settrack(currentplaylist[0],currentplaylist,false);
 
+
+$(".playbackbar .progressbar").mousedown(function() {
+	mousedown = true;
 });
+
+$(".playbackbar .progressbar").mousemove(function(e) {
+	if(mousedown == true){
+		timefromoffset(e , this);
+	}
+});
+
+$(".playbackbar .progressbar").mouseup(function(e) {
+	timefromoffset(e , this);
+});
+
+$(document).mouseup(function(){
+	mousedown=false;
+});
+
+
+});
+
+function timefromoffset(mouse, progressbar){
+	var percentage = mouse.offset / $(progressbar).width() * 100;
+	var seconds = audioelement.audio.duration * (percentage / 100);
+	audioelement.settime(seconds);
+}
+
 
 function settrack(trackid,newplaylist,play){
 	$.post("includes/handler/ajax/getsongjson.php", {songid:trackid}, function(data) {
@@ -37,17 +64,22 @@ function settrack(trackid,newplaylist,play){
 			$(".albumlink img").attr("src", album.artworkpath);
 		});
 		
-		audioelement.settrack(track.path);
-	
-	if(play == true){
-		audioelement.play();
+		audioelement.settrack(track);
+		if(play == true){
+		playsong();
 	}
+	
 	});
 
 	
 }
 
 function playsong(){
+
+	if(audioelement.audio.currentTime == 0){
+		$.post("includes/handler/ajax/updateplays.php", {songid:audioelement.currentplaying.id });
+	}
+	
 	$(".controlbutton.play").hide();
 	$(".controlbutton.pause").show();
 
