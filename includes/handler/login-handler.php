@@ -10,7 +10,10 @@ if(isset($_POST['logibutton'])){
 	if($result == true){
 		$_SESSION['userloggedin'] = $username;
 				header("Location: index.php");
-	}
-	
+
+
+
+
+}	
 }
 ?>

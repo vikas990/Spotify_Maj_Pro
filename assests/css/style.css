@@ -181,7 +181,8 @@ display: table;
 }
 
 .logo img{
-	width: 50px;
+	width: 190px;
+	height: 100px;
 }
 
 .navbar .group{
@@ -203,10 +204,14 @@ display: table;
 	text-decoration: none;
 }
 
+
+
 .navitemlink:hover{
 	color:#ffffff;
 	
 }
+
+
 
 .navitemlink .icon{
 	position: absolute;
@@ -263,7 +268,7 @@ display: table;
 }
 
 .entityinfo .leftsection{
-	width: 30%
+	width: 30%;
 	max-width:250px;
 	float: left;
 
@@ -367,4 +372,210 @@ display: table;
 .tracklistrow .trackinfo .trackname{
 	color: #ffffff;
 	margin:6px;
+}
+
+.artistinfo{
+	text-align: center;
+}
+
+.headerbutton .button{
+	color: #ffffff;
+	cursor: pointer;
+	margin-bottom: 10px;
+	background-color: transparent;
+	font-weight: 500;
+	letter-spacing: 2px;
+	border: 2px solid #ffffff;
+	border-radius: 500px;
+	padding: 10px;
+	min-width: 130px;
+}
+
+.buttonitems .button{
+	color: #ffffff;
+	cursor: pointer;
+	margin-bottom: 10px;
+	background-color: transparent;
+	font-weight: 500;
+	letter-spacing: 2px;
+	border: 2px solid #ffffff;
+	border-radius: 500px;
+	padding: 10px;
+	min-width: 130px;
+	display: block;
+	margin: 0px auto 20px auto;
+}
+
+.buttons{
+	color: #ffffff;
+	cursor: pointer;
+	margin-bottom: 10px;
+	background-color: transparent;
+	font-weight: 500;
+	letter-spacing: 2px;
+	border: 2px solid #ffffff;
+	border-radius: 500px;
+	padding: 10px;
+	min-width: 130px;
+	display: block;
+	margin: 0px auto 20px auto;
+}
+
+.button.green{
+	    background-color: #2ebd59;
+    border-color: #2ebd59;
+}
+
+.playlistcontainer{
+	padding: 10px 0px;
+
+}
+
+.borderbottom{
+	border-bottom: 1px solid #939393;
+	margin-bottom: 20px;
+}
+
+.tracklistcontainer h2,
+.gridviewcontainer h2{
+	text-align: center;
+}
+
+[role="link"]{
+	cursor: pointer;
+}
+
+.searchcontainer{
+	background-color: #242424;
+	padding: 20px 20px;
+}
+
+.searchcontainer h4{
+	margin: 0;
+	font-weight: 300;
+}
+
+.searchcontainer .searchinput{
+	width: 100%;
+	background-color: transparent;
+	border:none;
+	color: #ffffff;
+	font-weight: 700;
+	font-size: 62px;
+	letter-spacing: 2px;
+}
+
+input:focus{
+	outline: none;
+}
+
+.searchresultrow{
+	padding: 15px 10px;
+}
+
+.searchresultrow:hover{
+	background-color: #282828;
+}
+
+.searchresultrow .artistname span{
+	color: #ffffff;
+}
+
+.artistcontainer h2{
+	text-align: center;
+}
+
+.noresults{
+	margin: 15px;
+	display: block;
+}
+
+.playlistimage{
+	border:3px solid #282828;
+	padding: 10px;
+}
+
+.rightsection .button{
+	color: #ffffff;
+	cursor: pointer;
+	margin-bottom: 10px;
+	background-color: transparent;
+	font-weight: 500;
+	letter-spacing: 2px;
+	border: 2px solid #ffffff;
+	border-radius: 500px;
+	padding: 10px;
+	min-width: 130px;
+	display: block;
+	margin: 0px auto 20px auto;
+	float: left;
+}
+
+.optionmenu{
+	position: fixed;
+    background-color: #282828;
+    width: 200px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 3px;
+    z-index: 1000;
+    display: none;
+}
+
+.optionmenu .item{
+	width: 100%;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	font-weight: 400;
+	color: rgba(147, 147, 147, 0.8);
+	cursor: pointer;
+	height: 40px;
+	background-color: #282828;
+	font-size: 14px;
+}
+
+.optionmenu .item:hover{
+	color: #fff;
+	background-color: #333;
+	border-color: #333;
+}
+
+.optionmenu select{
+	border:none;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+}
+
+.userinfo h1{
+	text-align: center;
+}
+
+.userdetails{
+	padding: 20px;
+}
+
+.userdetails .container h2{
+	text-align: center;
+}
+
+.userdetails .container input[type="text"],
+.userdetails .container input[type="password"]{
+	display: block;
+	margin: 16px auto;
+}
+
+.userdetails .container input[type="text"],
+.userdetails .container input[type="password"]{
+
+	height: 50px;
+	width: 100%;
+	background: #1f1f1f;
+	border:none;
+	font-size: 18px;
+	font-weight: 300;
+	padding: 0 20px;
+}
+
+.userdetails .container .message{
+	color: #2ebd59;
+	font-weight: 300;
 }

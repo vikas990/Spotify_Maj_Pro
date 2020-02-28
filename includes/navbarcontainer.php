@@ -1,17 +1,17 @@
 <div id="navbarcontainer">
 	<div class="navbar">
-		<a href="index.php" class="logo">
-			<img src="assests/images/icons/logo.png">
+		<span   role="link" tabindex="0" onclick="openpage('index.php')" class="logo">
+			<img src="assests/images/profile-pic/listen.png">
 			
-		</a>
+		</span>
 
 		<div class="group">
 			
 			<div class="navitem">
 				
-				<a href="search.php" class="navitemlink">Search
+				<span   role="link" tabindex="0" onclick="openpage('search.php')"  class="navitemlink">Search
 				<img src="assests/images/icons/search.png" class="icon" alt="search ">
-			</a>
+			</span>
 			</div>
 		</div>
 
@@ -19,17 +19,21 @@
 			
 			<div class="navitem">
 				
-				<a href="browse.php" class="navitemlink">Browse</a>
+				<span   role="link" tabindex="0" onclick="openpage('browse.php')" class="navitemlink">Browse</span>
 			</div>
 
 			<div class="navitem">
 				
-				<a href="yuormusic.php" class="navitemlink">Your Music</a>
+				<span   role="link" tabindex="0" onclick="openpage('yourmusic.php')" class="navitemlink">Your Music</span>
 			</div>
 
 			<div class="navitem">
 				
-				<a href="profile.php" class="navitemlink">User profile</a>
+				<span   role="link" tabindex="0" onclick="openpage('settings.php')" class="navitemlink"> <?php
+								echo $userloggedin->getfirstandlastname();
+								?>
+		
+				</span>
 			</div>
 		</div>
 	</div>

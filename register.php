@@ -68,7 +68,7 @@ function getInputValue($name){
 
 							<p>
 								<label for="loginpassword">Password</label>
-								<input type="loginpassword" name="loginpassword" id="loginpassword"  placeholder="password" required>
+								<input type="password" name="loginpassword" id="loginpassword"  placeholder="password" required>
 							</p>
 							<button type="submit" name="logibutton">Log In</button>
 								<div class="hasaccounttext">
